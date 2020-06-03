@@ -1,17 +1,13 @@
 @echo off
+echo Bot running ...
 cd C:\Users\%USERNAME%\AppData\Local\Android\Sdk\platform-tools
 
-:Start
-adb shell input swipe 500 500 500 700 100
-ping 127.0.0.1 -n 1 -w 200> nul
+:start
+adb shell input swipe 500 500 500 700 50
+adb shell input swipe 500 500 300 500 50
+adb shell input swipe 500 500 500 700 50
+adb shell input swipe 500 500 700 500 50
+echo Another round!
+goto start
 
-adb shell input swipe 500 500 300 500 100
-ping 127.0.0.1 -n 1 -w 200> nul
-
-adb shell input swipe 500 500 500 700 100
-ping 127.0.0.1 -n 1 -w 200> nul
-
-adb shell input swipe 500 500 700 500 100
-ping 127.0.0.1 -n 1 -w 200> nul
-
-GOTO Start
+pause

@@ -9,6 +9,8 @@ The script requires the installation of the Android Debug Bridge (ADB). [Learn m
 Also, please ensure, that the path in line 2 in the script matches with the installation directory of the Android SDK on your computer.
 Furthermore, there is a USB connection of your Android device to your PC required.
 
+Tested on a Google Pixel 3a.
+
 ## Legal disclosure
 I don't have the rights of the game 2048 or the logo of the game.
 
